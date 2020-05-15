@@ -20,7 +20,7 @@ logging:
 #    type: log
 
 services:
-  - module: lib/index.js
+  - module: /lib/index.js
     entrypoint: apiServiceWorker
     conf:
         # For backwards compatibility, and to continue to support non-static
@@ -37,7 +37,7 @@ services:
         mwApis:
         - # This is the only required parameter,
           # the URL of you MediaWiki API endpoint.
-          uri: 'http://www.thatgamecompony.cn/api.php'
+          uri: 'https://www.thatgamecompony.cn/api.php'
           # The "domain" is used for communication with Visual Editor
           # and RESTBase.  It defaults to the hostname portion of
           # the `uri` property above, but you can manually set it
